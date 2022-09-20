@@ -1,34 +1,32 @@
 {
-	"name": "@owlebot/template",
+	"name": "@owlebot/logger",
 	"version": "0.1.0",
-	"description": "Owlebot template.",
+	"description": "Owlebot universal Logger.",
 	"author": "Khaaz <khaaz.dev@gmail.com>, Xerstom <xerstomdev@outlook.fr>",
-	"link": "https://github.com/owlebot/template",
+	"link": "https://github.com/owlebot/logger",
 	"main": "./src/index.js",
 	"type": "module",
 	"license": "MIT",
 	"engines": {
 		"node": ">=18.0.0"
 	},
-	"private": true,
 	"dependencies": {},
 	"devDependencies": {
 		"@owlebot/eslint-config": "^1.0.0",
 		"eslint": "^8.23.0"
 	},
 	"scripts": {
-		"lint": "eslint src/**/*.js",
-		"test": "yarn run lint",
-		"start": "node src/index.js",
-		"start:pm2": "pm2 start scripts/start.config.js"
+		"lint": "eslint src/**/*.js tests/**/*.js",
+		"test": "node tests/index.js",
+		"start": "node tests/index.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/owlebot/template.git"
+		"url": "git+https://github.com/owlebot/logger.git"
 	},
 	"bugs": {
-		"url": "https://github.com/owlebot/template/issues"
+		"url": "https://github.com/owlebot/logger/issues"
 	},
-	"homepage": "https://github.com/owlebot/template#readme",
+	"homepage": "https://github.com/owlebot/logger#readme",
 	"keywords": []
 }

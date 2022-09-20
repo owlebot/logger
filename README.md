@@ -1,13 +1,9 @@
-# template
+# logger
 
-Template repo for future node projects
-
+Owlebot universal Logger.  
 ## Setup
 
 Node version: [Node v18+](https://nodejs.org/en/download/)
-
-**Requirements:**  
-Copy `secret.template.json` as `secret.json`.  
 
 **Install dependencies:**  
 `yarn`  

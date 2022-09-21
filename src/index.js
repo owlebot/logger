@@ -30,7 +30,7 @@ class Logger {
 
 		// dynamically create static methods for each log level
 		for (const l in LOG_LEVELS) {
-			Logger[l] = (module, log) => this.log(l, module, log);
+			Logger[l] = (module, log, obj) => this.log(l, module, log, obj);
 		}
 	}
 
@@ -44,9 +44,12 @@ class Logger {
 		return LOG_LEVELS[level] >= this.#level;
 	}
 	
-	log(level, module, log) {
+	log(level, module, log, obj) {
 		if (this._shouldLog(level) ) {
 			console.log(this._format(level, module, log) );
+			if (obj) {
+				console.log(obj);
+			}
 		}
 	}
 

@@ -1,16 +1,17 @@
-
 name: Test
 
-on: [push]
+on: 
+  push:
+  workflow_call:
 
 jobs:
-  lint:
+  lint-js:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -18,6 +19,6 @@ jobs:
     - name: yarn install and lint
       run: |
         yarn install
-        yarn lint
+        yarn test
       env:
         CI: true

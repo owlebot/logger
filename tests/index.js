@@ -1,4 +1,4 @@
-import Logger from "../src/index.js";
+import { Logger } from "../src/Logger.js";
 
 Logger.create("@owlebot/logger", "debug");
 

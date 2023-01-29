@@ -4,13 +4,15 @@
 	"description": "Owlebot universal Logger.",
 	"author": "Khaaz <khaaz.dev@gmail.com>, Xerstom <xerstomdev@outlook.fr>",
 	"link": "https://github.com/owlebot/logger",
-	"main": "./src/index.js",
+	"main": "./index.js",
 	"type": "module",
 	"license": "MIT",
 	"engines": {
 		"node": ">=18.0.0"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"winston": "^3.8.2"
+	},
 	"devDependencies": {
 		"@owlebot/eslint-config": "^1.0.0",
 		"eslint": "^8.32.0"

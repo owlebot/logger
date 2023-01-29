@@ -11,11 +11,11 @@ export class Logger {
 
 		// dynamically create static methods for each log level
 		for (const l in levelConfig.levels) {
-			Logger[l] = (module, log, obj) => this.log(l, module, log, obj);
+			Logger[l] = (...args) => this.log(l, ...args);
 		}
 
-		Logger.init = (port) => this.init(port);
-		Logger.request = (req) => this.request(req);
+		Logger.init = (...args) => this.init(...args);
+		Logger.request = (...args) => this.request(...args);
 	}
 
 	static create(packageName) {

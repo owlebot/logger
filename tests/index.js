@@ -1,6 +1,6 @@
 import { Logger } from "../src/Logger.js";
 
-Logger.create("@owlebot/logger", "debug");
+Logger.create("@owlebot/logger");
 
 Logger.debug("main", "log to debug something");
 Logger.info("main", "all good");

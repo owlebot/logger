@@ -40,7 +40,7 @@ Basic example:
 ```js
 import Logger from "@owlebot/logger";
 
-Logger.create("@owlebot/repo", "debug");
+Logger.create("@owlebot/repo");
 
 Logger.debug("Module", "log");
 

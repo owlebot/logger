@@ -32,10 +32,10 @@ export class Logger {
 		this.#winston.notice(`Express - Listening on port ${port}.`);
 	}
 
-	request(method, path, obj, requestID, correlationID) {
+	request(method, path, obj, requestID, correlationId) {
 		let message = `Express - ${method} ${path}`;
-		if (correlationID) {
-			message += ` ; Correlation ${correlationID}`;
+		if (correlationId) {
+			message += ` ; Correlation ${correlationId}`;
 		}
 		if (requestID) {
 			message += ` ; Request ${requestID}`;

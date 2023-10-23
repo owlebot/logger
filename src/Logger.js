@@ -14,7 +14,6 @@ export class Logger {
 			Logger[l] = (...args) => this.log(l, ...args);
 		}
 
-		Logger.init = (...args) => this.init(...args);
 		Logger.request = (...args) => this.request(...args);
 	}
 
@@ -26,10 +25,6 @@ export class Logger {
 	
 	log(level, module, log, obj) {
 		this.#winston[level](`${module} - ${log}${obj ? " ; %O" : ""}`, obj);
-	}
-
-	init(port) {
-		this.#winston.notice(`Express - Listening on port ${port}.`);
 	}
 
 	request(method, path, obj, requestId, correlationId) {

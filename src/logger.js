@@ -1,5 +1,5 @@
-import { levelConfig } from "./levelConfig.js";
-import { Winston } from "./Winston.js";
+import { levelConfig } from "./level-config.js";
+import { Winston } from "./winston.js";
 
 export class Logger {
 	static #instance = null;

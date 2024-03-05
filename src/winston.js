@@ -4,7 +4,7 @@ import winston, {
 	transports,
 } from "winston";
 
-import { levelConfig } from "./levelConfig.js";
+import { levelConfig } from "./level-config.js";
 
 function _padLevel(level) {
 	return level.toUpperCase().padEnd(7, " ");

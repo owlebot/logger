@@ -1,6 +1,6 @@
 {
 	"name": "@owlebot/logger",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"description": "Owlebot universal Logger.",
 	"author": "Khaaz <khaaz.dev@gmail.com>, Xerstom <xerstomdev@outlook.fr>",
 	"link": "https://github.com/owlebot/logger",
